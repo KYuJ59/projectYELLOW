@@ -1,11 +1,958 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/afe8f1b467.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div id="headerWrap">
+        <header>
+            <div id="headerMidbox">
+                <div id="headerMidbox_inLeft">
+                    <h1 id="logo"><a href="#">노랑이</a></h1>
+                    <div id="searchLink">
+                        <a href="#">나도 여행가고싶다..
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="headerMidbox_inRight">
+                    <div id="headerMid_promotionbox">
+                        <ul id="headerMid_promotionList">
+                            <li><a href="#">긴급특가</a></li>
+                            <li><a href="#">출발확정</a></li>
+                            <li><a href="#">얼리버드</a></li>
+                            <li><a href="#">숙박페스타</a></li>
+                            <li><a href="#">3월혜택</a></li>
+                        </ul>
+                    </div>
+                    <div id="headerMid_users">
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+            <nav id="mainMenu">
+                <ul id="mainMenu_list">
+                    <li>
+                        <a href="#">해외패키지</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list">
+                                    <li>
+                                        <a href="#">유럽</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">서유럽</a></li>
+                                                        <li><a href="#">동유럽</a></li>
+                                                        <li><a href="#">발칸/동유럽</a></li>
+                                                        <li><a href="#">발칸</a></li>
+                                                        <li><a href="#">스페인/포르투갈/모로코</a></li>
+                                                        <li><a href="#">튀르키예/그리스</a></li>
+                                                        <li><a href="#">북유럽/발틱</a></li>
+                                                        <li><a href="#">두바이/이집트/사우디</a></li>
+                                                        <li><a href="#">코카서스/중앙아시아</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">한나라 깊이보기</a></li>
+                                                        <li><a href="#">100%출발확정</a></li>
+                                                        <li><a href="#">비즈니스 항공</a></li>
+                                                        <li><a href="#">주말출도착</a></li>
+                                                        <li><a href="#">2025 추석연휴&성수기</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">동유럽/발칸 3~6월 출발 10만원 할인</a></li>
+                                                        <li><a href="#">스위스 알프스 여행 BEST</a></li>
+                                                        <li><a href="#">이집트 100% 출발확정</a></li>
+                                                        <li><a href="#">노랑플러스 동유럽/발칸</a></li>
+                                                        <li><a href="#">서유럽 2인 이상 동반자 할인</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">동남아</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">방콕/파타야</a></li>
+                                                        <li><a href="#">푸켓/카오락</a></li>
+                                                        <li><a href="#">치앙마이/치앙라이</a></li>
+                                                        <li><a href="#">싱가포르/바탐</a></li>
+                                                        <li><a href="#">브루나이</a></li>
+                                                        <li><a href="#">코타키나발루</a></li>
+                                                        <li><a href="#">쿠알라룸푸르</a></li>
+                                                        <li><a href="#">하노이/하롱베이</a></li>
+                                                        <li><a href="#">다낭/호이안/후에</a></li>
+                                                        <li><a href="#">나트랑&달랏</a></li>
+                                                        <li><a href="#">푸꾸옥</a></li>
+                                                        <li><a href="#">캄보디아/베트남 연계</a></li>
+                                                        <li><a href="#">라오스</a></li>
+                                                        <li><a href="#">보라카이</a></li>
+                                                        <li><a href="#">세부</a></li>
+                                                        <li><a href="#">보홀</a></li>
+                                                        <li><a href="#">발리</a></li>
+                                                        <li><a href="#">인도/네팔/스리랑카</a></li>
+                                                        <li><a href="#">마닐라/클락/코론/엘니도</a></li>
+                                                        <li><a href="#">호치민/붕따우</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">2025년 황금연휴</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">제주항공 타고 열대자연의 선물 발리로</a></li>
+                                                        <li><a href="#">이스타항공 신규취항, 알차게 치앙마이</a></li>
+                                                        <li><a href="#">아이동반 가족여행 강력 추천 리조트,세부</a></li>
+                                                        <li><a href="#">대한항공타고 떠나는 방콕/파타야 여행</a></li>
+                                                        <li><a href="#">내 생애 한번은, 천년의 역사 앙코르왓으로</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">일본</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">북해도</a></li>
+                                                        <li><a href="#">후쿠오카</a></li>
+                                                        <li><a href="#">오사카/교토/고베</a></li>
+                                                        <li><a href="#">동경/시즈오카</a></li>
+                                                        <li><a href="#">오키나와/미야코지마/이시가키</a></li>
+                                                        <li><a href="#">오이타/사가/우베</a></li>
+                                                        <li><a href="#">아오모리/니가타/아키타</a></li>
+                                                        <li><a href="#">요나고/나고야/알펜루트</a></li>
+                                                        <li><a href="#">마츠야마/다카마츠/도쿠시마</a></li>
+                                                        <li><a href="#">구마모토/미야자키/가고시마</a></li>
+                                                        <li><a href="#">대마도/선박여행</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">프리미엄 북해도</a></li>
+                                                        <li><a href="#">지방/청주 출발 상품</a></li>
+                                                        <li><a href="#">100% 출발확정</a></li>
+                                                        <li><a href="#">힐링 온천여행</a></li>
+                                                        <li><a href="#">황금연휴 일본여행</a></li>
+                                                        <li><a href="#">일본 자유여행</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">돌아온 알펜루트, 기다리던 설벽 시즌</a></li>
+                                                        <li><a href="#">BEST 여행지 오사카! 100% 출발확정</a></li>
+                                                        <li><a href="#">나만알고 싶은 겨울, 日本 북해도</a></li>
+                                                        <li><a href="#">모래처럼 반짝이는 온천마을 요나고</a></li>
+                                                        <li><a href="#">대한항공으로 떠나는, 규슈겨울여행</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">괌/사이판</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">괌</a></li>
+                                                        <li><a href="#">사이판</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">가족패키지</a></li>
+                                                        <li><a href="#">친구&커플</a></li>
+                                                        <li><a href="#">시내중심</a></li>
+                                                        <li><a href="#">액티비티(워터파크)</a></li>
+                                                        <li><a href="#">사이판 골프투어</a></li>
+                                                        <li><a href="#">2025 황금연휴</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">진에어와 함께 GUAM</a></li>
+                                                        <li><a href="#">괌 코코마라톤 2025</a></li>
+                                                        <li><a href="#">대한항공 타고 설레는 GUAM</a></li>
+                                                        <li><a href="#">괌 프리미어 호텔 메가세일</a></li>
+                                                        <li><a href="#">사이판 호캉스 "FLEX"</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">호주/뉴질랜드</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">호주</a></li>
+                                                        <li><a href="#">뉴질랜드</a></li>
+                                                        <li><a href="#">호주/뉴질랜드</a></li>
+                                                        <li><a href="#">타히티</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">긴급특가상품</a></li>
+                                                        <li><a href="#">홈쇼핑 HIT 상품</a></li>
+                                                        <li><a href="#">자유일정 상품</a></li>
+                                                        <li><a href="#">비즈니스상품</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">이달의 BEST</a></li>
+                                                        <li><a href="#">아름다운 청정자연 호주로 떠나자</a></li>
+                                                        <li><a href="#">2025 비비드 시드니 세계 빛 축제</a></li>
+                                                        <li><a href="#">골드코스트에서 추억 만들기!</a></li>
+                                                        <li><a href="#">시드니 자유로운 노쇼핑 신상품</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">미주/캐나다/하와이</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">미서부</a></li>
+                                                        <li><a href="#">미동부</a></li>
+                                                        <li><a href="#">미남부</a></li>
+                                                        <li><a href="#">하와이</a></li>
+                                                        <li><a href="#">캐나다</a></li>
+                                                        <li><a href="#">미주 연계</a></li>
+                                                        <li><a href="#">알래스카</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">노랑이단독상품</a></li>
+                                                        <li><a href="#">2인이상 출발확정</a></li>
+                                                        <li><a href="#">아이비리그 투어</a></li>
+                                                        <li><a href="#">VIP리무진 탑승</a></li>
+                                                        <li><a href="#">5개월 한정 옐로스톤</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">미동부 3월 긴급 초특가</a></li>
+                                                        <li><a href="#">미서부, 여름휴가 황금특가</a></li>
+                                                        <li><a href="#">하와이, 꿈같은 스위트룸 완벽한 휴식</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">중남미/아프리카카</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">중남미</a></li>
+                                                        <li><a href="#">아프리카</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">25년 황금연휴 출발확정</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">중남미BEST</a></li>
+                                                        <li><a href="#">아프리카BEST</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">대만/홍콩/마카오</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">대만</a></li>
+                                                        <li><a href="#">홍콩/마카오</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">미식(美食) 여행</a></li>
+                                                        <li><a href="#">호캉스투어</a></li>
+                                                        <li><a href="#">힐링온천</a></li>
+                                                        <li><a href="#">레져파크</a></li>
+                                                        <li><a href="#">연휴상품</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">대만에 반하다, 인기상품 모음집</a></li>
+                                                        <li><a href="#">홍콩, 버킷리스트 TOP10</a></li>
+                                                        <li><a href="#">홍콩, 서구룡 문화지구</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">중국/몽골</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">장가계</a></li>
+                                                        <li><a href="#">백두산</a></li>
+                                                        <li><a href="#">태항산</a></li>
+                                                        <li><a href="#">황산/신선거</a></li>
+                                                        <li><a href="#">계림/천저우(망산)/여강(곤명)</a></li>
+                                                        <li><a href="#">구채구/중경</a></li>
+                                                        <li><a href="#">북경</a></li>
+                                                        <li><a href="#">상해</a></li>
+                                                        <li><a href="#">서안/정주</a></li>
+                                                        <li><a href="#">청도</a></li>
+                                                        <li><a href="#">대련/연태/천진</a></li>
+                                                        <li><a href="#">하이난/하문</a></li>
+                                                        <li><a href="#">몽골/내몽고</a></li>
+                                                        <li><a href="#">하얼빈/우루무치/티벳</a></li>
+                                                        <li><a href="#">청주출발</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">짧지만 알차게 2박3일</a></li>
+                                                        <li><a href="#">힐링 온천여행</a></li>
+                                                        <li><a href="#">#MZ #2040</a></li>
+                                                        <li><a href="#">유니버셜/디즈니랜드</a></li>
+                                                        <li><a href="#">4명부터 우리끼리</a></li>
+                                                        <li><a href="#">홈쇼핑 인기상품</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">2025년 설레는 봄 중국 풍경구</a></li>
+                                                        <li><a href="#">2025년 대자연의 아름다움 몽골vs백두산</a></li>
+                                                        <li><a href="#">이스타항공으로 떠나는 백만불야경 상해</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">부산/지방 출발</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">괌</a></li>
+                                                        <li><a href="#">필리핀</a></li>
+                                                        <li><a href="#">베트남/캄보디아</a></li>
+                                                        <li><a href="#">싱가포르</a></li>
+                                                        <li><a href="#">일본</a></li>
+                                                        <li><a href="#">중국</a></li>
+                                                        <li><a href="#">태국</a></li>
+                                                        <li><a href="#">코타키나발루</a></li>
+                                                        <li><a href="#">홍콩/마카오</a></li>
+                                                        <li><a href="#">대만/몽골</a></li>
+                                                        <li><a href="#">라오스</a></li>
+                                                        <li><a href="#">발리</a></li>
+                                                        <li><a href="#">제주도</a></li>
+                                                        <li><a href="#">대구 출발</a></li>
+                                                        <li><a href="#">청주 출발</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">항공권+여행자보험</a></li>
+                                                        <li><a href="#">세미패키지</a></li>
+                                                        <li><a href="#">에어텔</a></li>
+                                                        <li><a href="#">NO팁/NO옵션</a></li>
+                                                        <li><a href="#">골프+관광</a></li>
+                                                        <li><a href="#">프리미엄상품품</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">취향따라 골라가는 자유여행</a></li>
+                                                        <li><a href="#">바닷길 따라 떠나는 일본선박여행</a></li>
+                                                        <li><a href="#">산의 기운 듬뿍 아름다운 중국 명산</a></li>
+                                                        <li><a href="#">청춘의 도시, 액티비티 천국 라오스</a></li>
+                                                        <li><a href="#">에어부산 신규취항, 환상의 섬 발리</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">홈쇼핑</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">에어텔</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list">
+                                    <li>
+                                        <a href="#">클럽메드</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">동남아/몰디브</a></li>
+                                                        <li><a href="#">일본</a></li>
+                                                        <li><a href="#">중국</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                </div>
+                                                <div class="category_promotion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">유럽</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">프랑스</a></li>
+                                                        <li><a href="#">이탈리아/스위스</a></li>
+                                                        <li><a href="#">영국</a></li>
+                                                        <li><a href="#">스페인/포르투갈</a></li>
+                                                        <li><a href="#">동유럽/발칸</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                </div>
+                                                <div class="category_promotion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">괌/사이판</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">괌</a></li>
+                                                        <li><a href="#">사이판</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">
+                                                        프로모션
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">사이판 이웃섬 티니안</a></li>
+                                                        <li><a href="#">괌 프리미어 호텔 메가세일</a></li>
+                                                        <li><a href="#">괌/사이판 렌터카</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">동남아/몰디브</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">다낭</a></li>
+                                                        <li><a href="#">나트랑</a></li>
+                                                        <li><a href="#">푸꾸옥</a></li>
+                                                        <li><a href="#">세부</a></li>
+                                                        <li><a href="#">보라카이</a></li>
+                                                        <li><a href="#">마닐라/코론/보홀</a></li>
+                                                        <li><a href="#">방콕/파타야/치앙마이</a></li>
+                                                        <li><a href="#">푸켓/카오락</a></li>
+                                                        <li><a href="#">싱가포르</a></li>
+                                                        <li><a href="#">코타키나발루</a></li>
+                                                        <li><a href="#">쿠알라룸푸르</a></li>
+                                                        <li><a href="#">발리</a></li>
+                                                        <li><a href="#">몰디브</a></li>
+                                                        <li><a href="#">클락</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">
+                                                        테마
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">커플여행</a></li>
+                                                        <li><a href="#">가족여행</a></li>
+                                                        <li><a href="#">워터파크</a></li>
+                                                        <li><a href="#">특별한 리조트 혜택</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">일본</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">동경</a></li>
+                                                        <li><a href="#">큐슈</a></li>
+                                                        <li><a href="#">북해도</a></li>
+                                                        <li><a href="#">오사카/나고야</a></li>
+                                                        <li><a href="#">오키나와</a></li>
+                                                        <li><a href="#">마츠야마/다카마쓰/히로시마/도쿠시마</a></li>
+                                                        <li><a href="#">미야코지마/이시가키</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">
+                                                        테마
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">올인클루시브</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">
+                                                        프로모션
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">일본 자유여행 완!전!정!복!</a></li>
+                                                        <li><a href="#">가볍게 훌쩍! in 후쿠오카</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">국내</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">제주도</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                </div>
+                                                <div class="category_promotion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">미주/호주</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">미주</a></li>
+                                                        <li><a href="#">호주</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                </div>
+                                                <div class="category_promotion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">땡처리항공</a></li>
+                                    <li><a href="#">맞춤 견적 문의</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">허니문</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list">
+                                    <li><a href="#">몰디브</a></li>
+                                    <li><a href="#">하와이</a></li>
+                                    <li><a href="#">칸쿤</a></li>
+                                    <li><a href="#">발리</a></li>
+                                    <li><a href="#">푸켓</a></li>
+                                    <li><a href="#">카오락</a></li>
+                                    <li><a href="#">코사무이</a></li>
+                                    <li><a href="#">괌/사이판</a></li>
+                                    <li><a href="#">모리셔스</a></li>
+                                    <li><a href="#">피지/타히티/세이셸</a></li>
+                                    <li><a href="#">서유럽</a></li>
+                                    <li><a href="#">동유럽</a></li>
+                                    <li><a href="#">스페인/포르투갈/지중해</a></li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">맞춤 견적 문의</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">골프</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list">
+                                    <li><a href="#">일본</a></li>
+                                    <li><a href="#">중국</a></li>
+                                    <li><a href="#">태국</a></li>
+                                    <li><a href="#">필리핀</a></li>
+                                    <li><a href="#">베트남</a></li>
+                                    <li><a href="#">말레이시아</a></li>
+                                    <li><a href="#">라오스</a></li>
+                                    <li><a href="#">인도네시아</a></li>
+                                    <li><a href="#">괌/사이판/하와이</a></li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">맞춤 견적 문의</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">테마/크루즈</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list" style="margin-left:250px">
+                                    <li><a href="#">테마여행</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">한국/일본/중국</a></li>
+                                                        <li><a href="#">동남아</a></li>
+                                                        <li><a href="#">미주/유럽</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">웰니스여행</a></li>
+                                                        <li><a href="#">미식여행</a></li>
+                                                        <li><a href="#">철도여행</a></li>
+                                                        <li><a href="#">이색체험</a></li>
+                                                        <li><a href="#">역사/성지순례</a></li>
+                                                        <li><a href="#">스포츠/트레킹</a></li>
+                                                        <li><a href="#">문화/예술/공연</a></li>
+                                                        <li><a href="#">전문가동반</a></li>
+                                                        <li><a href="#">클럽메드 북해도 스키</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">크루즈</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">한국 출발</a></li>
+                                                        <li><a href="#">아시아/동남아</a></li>
+                                                        <li><a href="#">동/서부 지중해</a></li>
+                                                        <li><a href="#">북유럽</a></li>
+                                                        <li><a href="#">알래스카/미주</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">100% 출발확정 크루즈</a></li>
+                                                        <li><a href="#">부산 연안 원나잇 크루즈</a></li>
+                                                        <li><a href="#">오사카 엑스포 크루즈</a></li>
+                                                        <li><a href="#">내맘대로 크루즈</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">5/8 한대일 크루즈 (김연자 공연)</a></li>
+                                                        <li><a href="#">5/13 한대일 크루즈 (출연진 커밍순)</a></li>
+                                                        <li><a href="#">최대 10만원 할인 혜택</a></li>
+                                                        <li><a href="#">판타스틱 동남아 크루즈</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">프리미엄</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list" style="margin-left:50px">
+                                    <li><a href="#">유럽</a></li>
+                                    <li><a href="#">동남아</a></li>
+                                    <li><a href="#">일본</a></li>
+                                    <li><a href="#">괌/사이판</a></li>
+                                    <li><a href="#">호주/뉴질랜드</a></li>
+                                    <li><a href="#">미주/중남미</a></li>
+                                    <li><a href="#">홍콩/마카오/대만</a></li>
+                                    <li><a href="#">중국/몽골</a></li>
+                                    <li><a href="#">국내</a></li>
+                                    <li><a href="#">부산출발</a></li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">국내여행</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list" style="margin-left:400px">
+                                    <li><a href="#">제주도</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">제주시</a></li>
+                                                        <li><a href="#">중문</a></li>
+                                                        <li><a href="#">서귀포</a></li>
+                                                        <li><a href="#">애월</a></li>
+                                                        <li><a href="#">표선</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">버스패키지</a></li>
+                                                        <li><a href="#">렌터카 자유여행</a></li>
+                                                        <li><a href="#">에어텔</a></li>
+                                                        <li><a href="#">할인항공권</a></li>
+                                                        <li><a href="#">2025 연휴 출발확정</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">2025 월별 특가</a></li>
+                                                        <li><a href="#">연휴출발 얼리버드 할인</a></li>
+                                                        <li><a href="#">대한항공 타고 찐로컬 제주 여행</a></li>
+                                                        <li><a href="#">아시아나 타고 프라이빗 여행</a></li>
+                                                        <li><a href="#">국내 항공권 단체 예약 프로모션</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">내륙/섬</a>
+                                        <div class="category">
+                                            <div class="category_inBox">
+                                                <div class="category_area">
+                                                    <p class="categoryTitle">
+                                                        지역 <a href="#" class="categoryTitle_sub"></a>
+                                                    </p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">제주시</a></li>
+                                                        <li><a href="#">중문</a></li>
+                                                        <li><a href="#">서귀포</a></li>
+                                                        <li><a href="#">애월</a></li>
+                                                        <li><a href="#">표선</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_theme">
+                                                    <p class="categoryTitle">테마</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">버스패키지</a></li>
+                                                        <li><a href="#">렌터카 자유여행</a></li>
+                                                        <li><a href="#">에어텔</a></li>
+                                                        <li><a href="#">할인항공권</a></li>
+                                                        <li><a href="#">2025 연휴 출발확정</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_promotion">
+                                                    <p class="categoryTitle">프로모션</p>
+                                                    <ul class="category_list">
+                                                        <li><a href="#">2025 월별 특가</a></li>
+                                                        <li><a href="#">연휴출발 얼리버드 할인</a></li>
+                                                        <li><a href="#">대한항공 타고 찐로컬 제주 여행</a></li>
+                                                        <li><a href="#">아시아나 타고 프라이빗 여행</a></li>
+                                                        <li><a href="#">국내 항공권 단체 예약 프로모션</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="inPromot">
+                                    <li><a href="#">맞춤견적문의</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">홈쇼핑</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">항공</a></li>
+                    <li><a href="#">호텔</a></li>
+                    <li><a href="#">투어&티켓</a></li>
+                    <li><a href="#">KTX/렌터카</a>
+                        <div class="subMenu">
+                            <div class="subMenu_inBox">
+                                <ul class="subMenu_list" style="margin-left:680px">
+                                    <li><a href="#">KTX</a></li>
+                                    <li><a href="#">렌터카</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">기업/단체</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="topMenu">
+            <ul id="users">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">예약확인/결제</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="skipMenu">
+        <li><a href="#mainMenu" class="hidden">메인메뉴 바로가기</a></li>
+    </ul>
+
+    <script src="./script/script.js"></script>
 </body>
+
 </html>

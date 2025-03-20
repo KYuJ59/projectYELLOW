@@ -1,0 +1,28 @@
+.hidden{
+    width:1px;
+    height:1px;
+    font-size:0;
+    line-height:0;
+    position:absolute;
+    left:0;
+    top:0;
+}
+ul.skipMenu a:focus{
+    width:100%;
+    height:30px;
+    background:#000000;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9999;
+    font:normal 16px/30px '맑은고딕';
+    text-align:center;
+    color:#ffffff;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#000000;
+}
