@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.4/axios.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js'></script>
     <script src="https://kit.fontawesome.com/afe8f1b467.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mainVis.css">
+    <link rel="stylesheet" href="./css/cardMore.css">
+    <link rel="stylesheet" href="./css/content.css">
 </head>
 
 <body>
@@ -36,12 +41,13 @@
                         </ul>
                     </div>
                     <div id="headerMid_users">
-                        <i class="fa-regular fa-user"></i>
-                        <i class="fa-regular fa-clock"></i>
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                        <a href="#"><i class="fa-regular fa-clock"></i></a>
                     </div>
                 </div>
             </div>
             <nav id="mainMenu">
+                <h2 class="hidden">메인메뉴</h2>
                 <ul id="mainMenu_list">
                     <li>
                         <a href="#">해외패키지</a>
@@ -730,7 +736,7 @@
                         <a href="#">테마/크루즈</a>
                         <div class="subMenu">
                             <div class="subMenu_inBox">
-                                <ul class="subMenu_list" style="margin-left:250px">
+                                <ul class="subMenu_list" style="margin-left:260px">
                                     <li><a href="#">테마여행</a>
                                         <div class="category">
                                             <div class="category_inBox">
@@ -811,7 +817,7 @@
                         <a href="#">프리미엄</a>
                         <div class="subMenu">
                             <div class="subMenu_inBox">
-                                <ul class="subMenu_list" style="margin-left:50px">
+                                <ul class="subMenu_list" style="margin-left:100px">
                                     <li><a href="#">유럽</a></li>
                                     <li><a href="#">동남아</a></li>
                                     <li><a href="#">일본</a></li>
@@ -834,7 +840,7 @@
                         <a href="#">국내여행</a>
                         <div class="subMenu">
                             <div class="subMenu_inBox">
-                                <ul class="subMenu_list" style="margin-left:400px">
+                                <ul class="subMenu_list" style="margin-left:450px">
                                     <li><a href="#">제주도</a>
                                         <div class="category">
                                             <div class="category_inBox">
@@ -922,12 +928,12 @@
                         </div>
                     </li>
                     <li><a href="#">항공</a></li>
-                    <li><a href="#">호텔</a></li>
+                    <li><a href="#" class="hotItem">호텔</a></li>
                     <li><a href="#">투어&티켓</a></li>
                     <li><a href="#">KTX/렌터카</a>
                         <div class="subMenu">
                             <div class="subMenu_inBox">
-                                <ul class="subMenu_list" style="margin-left:680px">
+                                <ul class="subMenu_list" style="margin-left:740px">
                                     <li><a href="#">KTX</a></li>
                                     <li><a href="#">렌터카</a></li>
                                 </ul>
@@ -948,11 +954,186 @@
         </div>
     </div>
 
+    <!------헤더끝------>
+
+    <!----메인카드섹션---->
+    <div id="visualWrap">
+        <div id="main_promotionCardBox">
+            <ul id="main_promotionCard_list">
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection08.webp" alt="완벽한 인도차이나">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(45, 216, 165, 0) 0%,rgba(45, 216, 165,1) 80%,rgba(45, 216, 165,1) 100%)" >
+                        <p class="main_promotionCard_title">
+                            신짜오!
+                        </p>
+                        <p class="main_promotionCard_text">
+                            노랑이와 함께하는<br>
+                            완벽한 인도차이나
+                        </p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection09.webp" alt="온 가족이 즐거운">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(240, 164, 24, 0) 0%,rgba(240, 164, 24,1) 80%,rgba(240, 164, 24,1) 100%)" >
+                        <p class="main_promotionCard_title">
+                            트렌디한 우리 가족의 특별한 휴가
+                        </p>
+                        <p class="main_promotionCard_text">
+                            온 가족이 즐거운<br>
+                            클럽메드
+                        </p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection010.webp" alt="튀르키예">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(240, 121, 24, 0) 0%,rgba(240, 121, 24,1) 80%,rgba(240, 121, 24,1) 100%)" >
+                        <p class="main_promotionCard_title">
+                            문명의 흔적을 찾아서
+                        </p>
+                        <p class="main_promotionCard_text">
+                            튀르키예를 노랑풍선으로<br>
+                            가야 하는 이유
+                        </p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection00.webp" alt="TOP PICK 왕중왕전">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(47,55,78,0) 0%,rgba(47,55,78,1) 80%,rgba(47,55,78,1) 100%)">
+                        <p class="main_promotionCard_title">
+                            1위는 어디?
+                        </p>
+                        <p class="main_promotionCard_text">
+                            최고의 프리미엄 여행<br>
+                            TOP PICK 왕중왕전
+                        </p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection01.webp" alt="소규모 여행">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(130,192,216,0) 0%,rgba(130,192,216,1) 80%,rgba(130,192,216,1) 100%)" >
+                        <p class="main_promotionCard_title">
+                            소규모로 여행 떠날 계획이라면?
+                        </p>
+                        <p class="main_promotionCard_text">
+                            오늘! 선착순 쿠폰 선점 필수<br>
+                            팀당 최대 25만원 할인
+                        </p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection02.webp" alt="봄맞이 숙박세일">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(216, 83, 149, 0) 0%,rgba(216, 83, 149,1) 80%,rgba(216, 83, 149,1) 100%)" >
+                        <p class="main_promotionCard_title">
+                            최대 6만원 할인
+                        </p>
+                        <p class="main_promotionCard_text">
+                            2025 대한민국<br>
+                            봄맞이 숙박세일페스타
+                        </p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="main_promotionCard_Img">
+                        <img src="./images/cardsection03.webp" alt="직장인 여행 할인">
+                    </div>
+                    <div class="main_promotionCard_textBox" style="background: linear-gradient(to bottom,  rgba(132, 216, 83, 0) 0%,rgba(132, 216, 83,1) 80%,rgba(132, 216, 83,1) 100%)" >
+                        <p class="main_promotionCard_title">
+                            노랑이X가가오톡
+                        </p>
+                        <p class="main_promotionCard_text">
+                            직장인  여행 할인 혜택<br>
+                            봄바람 타고 출국
+                        </p>
+                    </div>
+                </a></li>
+            </ul>
+            <div id="main_promotionCard_slideRemote">
+                <div id="main_promotionCard_slideBar">
+                    <div></div>
+                </div>
+                <div id="main_promotionCard_slideCount">
+                    <p id="main_promotionCard_currentNum"></p>
+                    <p id="main_promotionCard_lastNum"></p>
+                </div>
+                <div id="main_promotionCard_slideButtons">
+                    <button id="main_promotionCard_prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="main_promotionCard_nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <button id="main_promotionCard_playBtn"><i class="fa-solid fa-pause"></i></button>
+                </div>
+                <button id="main_promotionCard_more" onClick="moreBtnAct()"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+    <!----메인카드섹션끝---->
+
+    <!----컨텐츠영역---->
+    <div id="contentWrap">
+        <section class="contentsBox" id="yellowPangDeal">
+            <h2 class="title">망설이면 솔드아웃! <b>옐로팡딜</b></h2>
+            <div class="viewAll_link">
+                <a href="#">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <a id="YP_imgLinkBox">
+                <img src="./images/link00.png" alt="20만원대부터 시작하는 봄맞이 특가">
+            </a>
+            <div id="yellowPangDeal_package">
+                <div class="yellowPangDeal_innerBox">
+                    <a href="#">
+                        <div class="YP_innerImg">
+                            <img src="./images/pack00.webp" alt="코타키나발루 5박6일">
+                            <div class="YP_timeout">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>03.25</span>
+                                10:00 ~ 
+                                <span>03.31</span>
+                                23:59
+                            </div>
+                        </div>
+                        <div class="YPInner_rightBox">
+                            <p class="YPInner_title">[패키지] 코타키나발루 5/6일</p>
+                            <ul>
+                                <li>스노쿨링&해수욕</li>
+                                <li>3일차 전일자유일정</li>
+                                <li>시내투어&로컬야시장</li>
+                            </ul>
+                            <p class="timePrice">타임특가</p><span class="timeCounter"></span>
+                            <div class="YPInner_rightBottomBox">
+                                <p>최대 2만원 즉시 할인</p>
+                                <p><span class="primePrice">379,000원~</span><span class="DCPrice">359,000</span>원~</p>
+                                <button>예약하기</button>
+                            </div>
+                        </div>                            
+                    </a>
+                </div>
+            </div>
+            <div id="YP_btnBox">
+                <button id="YP_prev_btn" class="prevBtn"></button>
+                <button id="YP_next_btn" class="nextBtn"></button>
+            </div>
+        </section>
+    </div>
+    <!----컨텐츠영역끝---->
+
+
     <ul class="skipMenu">
         <li><a href="#mainMenu" class="hidden">메인메뉴 바로가기</a></li>
     </ul>
 
     <script src="./script/script.js"></script>
+    <script src="./script/mainCard.js"></script>
+    <script src="./script/times.js"></script>
 </body>
 
 </html>

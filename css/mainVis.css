@@ -1,0 +1,170 @@
+#visualWrap{
+    width:100%;
+    height:575px;
+    box-sizing:border-box;
+    padding-top:40px;
+    background:#ffffff;
+}
+#main_promotionCardBox{
+    width:100%;
+    height:100%;
+    position:relative;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+#main_promotionCard_list{
+    width:auto;
+    height:480px;
+    margin:0 auto;
+    position:relative;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+}
+#main_promotionCard_list li{
+    width:420px;
+    height:100%;
+    border-radius:20px;
+    float:left;
+    margin-left:20px;
+    position:relative;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+#main_promotionCard_list li:first-child{
+    margin-left:0;
+}
+.main_promotionCard_Img{
+    width:100%;
+    height:100%;
+    position:relative;
+    left:0;
+    top:0;
+}
+.main_promotionCard_Img img{
+    width:120%;
+    object-fit:contain;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.main_promotionCard_textBox{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    color:#ffffff;
+}
+.main_promotionCard_title{
+    position:absolute;
+    left:50px;
+    bottom:150px;
+    font:normal 20px 'pretendard';
+}
+.main_promotionCard_text{
+    position:absolute;
+    left:50px;
+    bottom:40px;
+    font:normal 32px/48px 'pretendard';
+    font-weight:600;
+}
+#main_promotionCard_slideRemote{
+    width:100%;
+    height:40px;
+    margin-top:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffffff;
+}
+#main_promotionCard_slideRemote>div{
+    margin-left:10px;
+}
+#main_promotionCard_slideRemote>div:first-child{
+    margin-left:0;
+}
+#main_promotionCard_slideBar{
+    width:600px;
+    height:2px;
+    background:#dddddd;
+}
+#main_promotionCard_slideBar div{
+    width:50%;
+    height:2px;
+    background:#111111;
+}
+#main_promotionCard_slideCount{
+    width:70px;
+    height:100%;
+    position:relative;
+    lefT:0;
+    top:0;
+    display:flex;
+    background:#ffffff;
+}
+#main_promotionCard_slideCount p{
+    width:30px;
+    margin:0 5px;
+    font:normal 15px/40px 'pretendard';
+    font-weight:600;
+    color:#555555;
+    text-align:center;
+}
+p#main_promotionCard_currentNum{
+    color:#111111;
+}
+#main_promotionCard_slideCount::before{
+    display:block;
+    content:"";
+    width:1px;
+    height:10px;
+    background:#555555;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+#main_promotionCard_slideButtons{
+    width:120px;
+    height:100%;
+    border-radius:35px;
+    box-sizing:border-box;
+    padding-left:15px;
+    border:solid 1px #dddddd; 
+    background:#ffffff;
+    position:relative;
+    left:0;
+    top:0;
+    font-size:18px;
+    display:flex;
+}
+#main_promotionCard_slideButtons button{
+    margin: 0 5px;
+    background:#ffffff;
+    border:none;
+}
+
+button#main_promotionCard_playBtn{
+    width:40px;
+    height:40px;
+    box-sizing:border-box;
+    border:solid 1px #dddddd; 
+    border-radius:50%;
+    background:#ffffff;
+    position:absolute;
+    right:-6px;
+    top:-1px;
+}
+#main_promotionCard_more{
+    width:40px;
+    height:40px;
+    box-sizing:border-box;
+    border:solid 1px #dddddd;
+    border-radius:50%;
+    background:#ffffff;
+    margin-left:10px;
+}

@@ -11,6 +11,7 @@
     position:absolute;
     left:0;
     top:0;
+    z-index:6;
 }
 #users{
     width:1200px;
@@ -28,6 +29,9 @@
     font:normal 13px/30px 'pretendard';
     color:#555555;
 }
+#users li a:hover{
+    color:#222222;
+}
 #users li:first-child{
     margin-left:0;
 }
@@ -37,6 +41,10 @@ header{
     box-sizing:border-box;
     padding-top:30px;
     background:#ffffff;
+    position:relative;
+    left:0;
+    top:0;
+    z-index:5;
 }
 #headerMidbox{
     width:1200px;
@@ -136,6 +144,8 @@ header{
     display:flex;
     justify-content:space-between;
     align-items: center;
+}
+#headerMid_users>a{
     font-size:30px;
     color:#555555;
 }
@@ -155,21 +165,28 @@ header{
 #mainMenu_list>li{
     width:auto;
     height:100%;
-    margin-left:-18px;
+    margin-left:-24px;
 }
 #mainMenu_list>li>a{
-    padding:18px;
+    padding:18px 24px;
+    position:relative;
+    left:0;
+    top:0;
     font:normal 17px/57px 'pretendard';
     color:#555555;
 }
 #mainMenu_list>li:hover>div{
     display:block;
 }
+#mainMenu_list>li>a:hover{
+    color:#222222;
+}
 .subMenu{
     display:none;
     width:100%;
     height:50px;
     border-bottom:solid 1px #dddddd;
+    background:#ffffff;
     position:absolute;
     left:0;
     top:57px;
@@ -191,22 +208,41 @@ header{
     padding:0 10px;
 }
 .subMenu_inBox>ul>li>a{
-    font:normal 15px/50px 'pretendard';
+    padding:18px 0;
+    position:relative;
+    left:0;
+    top:0;
+    font:normal 15px 'pretendard';
+    color:#555555;
+}
+.subMenu_inBox>ul>li>a:hover{
+    color:#222222;
+}
+.subMenu_inBox>ul>li>a:hover::before{
+    display:block;
+    content:"";
+    width:100%;
+    height:2px;
+    background:#222222;
+    position:absolute;
+    left:0;
+    bottom:1px;
 }
 .subMenu_list{
-    margin-left:-15px;
+    margin-left:-10px;
 }
 .subMenu_list>li:hover>div{
     display:block;
 }
 .inPromot{
-    margin-right:-15px;
+    margin-right:-10px;
     justify-content:end;
 }
 .category{
     display:none;
     width:100%;
     height:450px;
+    background:#ffffff;
     position:absolute;
     left:0;
     top:51px;
@@ -253,4 +289,34 @@ header{
     font:normal 14.5px 'pretendard';
     line-height:1.5;
     color:#555555;
+}
+.hotItem::before{
+    display:block;
+    content:"HOT";
+    width:50px;
+    height:20px;
+    border-radius:10px;
+    background:#ff5c46;
+    position:absolute;
+    left:50%;
+    top:-10px;
+    transform:translateX(-50%);
+    font:normal 11px/20px 'pretendard';
+    font-weight:600;
+    color:#ffffff;
+    text-align:center;
+}
+.hotItem::after{
+    display:block;
+    content:"";
+    width:0;
+    height:0;
+    border-left:solid 5px transparent;
+    border-top:solid 4px #ff5c46;
+    border-right:solid 5px transparent;
+    border-bottom:solid 4px transparent;
+    position:absolute;
+    left:50%;
+    top:10px;
+    transform:translateX(-50%);
 }
