@@ -1,3 +1,16 @@
+
+loadSection()
+
+function loadSection(){
+
+    const panel=document.querySelector('#yellowPangDeal_innerBox')
+
+
+
+}
+
+
+
 times()
 
 function times(){
@@ -7,7 +20,7 @@ function times(){
 
     function raos(){
         const stamp=document.querySelector('.timeCounter')
-        timeCalculator(2025,2,31,23,59,0,stamp)
+        timeCalculator(2025,6,31,23,59,0,stamp)
     }
 
 
@@ -25,8 +38,6 @@ function times(){
         const minute = Math.floor((differenceTime % (1000 * 60 * 60)) / (1000 * 60))
         const second = Math.floor((differenceTime % (1000 * 60)) / 1000)
 
-        console.log(endDate)
-
         stamp.innerHTML=`${days}일 ${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}:${second.toString().padStart(2, '0')} 남음`
         //toString().padStart(n,n)의 의미
         //padStart(표시할문자길이,길이를 충족하지 못했을시 채워줄 문자)
@@ -37,4 +48,5 @@ function times(){
 
 
 }
+
 

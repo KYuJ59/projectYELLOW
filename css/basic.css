@@ -32,3 +32,56 @@ b{
 button{
     cursor:pointer;
 }
+
+
+#contentWrap{
+    width:100%;
+    min-height:500px;
+    padding-top:20px;
+    background:#ffffff;
+}
+.contentsBox{
+    width:1200px;
+    margin:70px auto;
+}
+.title{
+    font:normal 32px/48px 'pretendard';
+    color:#111111;
+}
+.viewAll_link{
+    text-align:right;
+    margin:20px 0;
+}
+.viewAll_link a{
+    font:normal 15px/22px 'pretendard';
+    color:#555555;
+}
+.btnBox{
+    width:100%;
+    height:40px;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+.slideBtn{
+    width:40px;
+    height:40px;
+    border:solid 1px #dddddd;
+    border-radius:50%;
+    background:#ffffff;
+    position:absolute;
+    top:0;
+    color:#555555;
+}
+.slideBtn:hover{
+    border-color:#111111;
+    background:#111111;
+    color:#ffffff;
+}
+.prevBtn{
+    left:-60px;
+}
+.nextBtn{
+    right:-60px;
+}

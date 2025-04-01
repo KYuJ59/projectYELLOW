@@ -1,0 +1,116 @@
+#yellowLive{
+    min-height:400px;
+    background:#ffffff;
+}
+#yellowLive_list{
+    width:100%;
+    height:498px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-column-gap:20px;
+}
+#yellowLive_list li{
+    height:100%;
+    float:left;
+}
+.YLive_topBox{
+    width:100%;
+    height:398px;
+    border-radius:10px;
+    position:relative;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+.YLive_topBox img{
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.brodcastAnnoun{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position:relative;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#ffffff;
+}
+.brodcastAnnoun p:nth-child(1){
+    border-radius:5px;
+    padding:0 10px;
+    background:#fcd2d3;
+    position:absolute;
+    left:15px;
+    top:15px;
+    font:normal 13px/24px 'pretendard';
+    color:#f90d19;
+}
+.brodcastAnnoun p:nth-child(2){
+    font:normal 24px 'pretendard';
+}
+.brodcastAnnoun p:nth-child(3){
+    font:bold 32px 'pretendard';
+}
+.signUpAlarm{
+    width:90px;
+    height:38px;
+    box-sizing:border-box;
+    border:solid 1px #ffffff;
+    border-radius:45px;
+    background:transparent;
+    margin-top:20px;
+    font:normal 14px 'pretendard';
+    color:#ffffff;
+}
+.brodcastTerm{
+    width:100%;
+    height:100%;
+    position:relative;
+    left:0;
+    top:0;
+}
+.brodcastTerm>span{
+    border-radius:20px;
+    padding:0 15px;
+    background:#f3f3f3cc;
+    position:absolute;
+    right:15px;
+    font:normal 13px/28px 'pretendard';
+    color:#555555;
+}
+.likeVal{
+    top:15px;
+}
+.viewVal{
+    top:50px;
+}
+.brodcastTime{
+    border-radius: 5px;
+    padding:0 15px;
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    left:15px;
+    bottom:15px;
+    font:normal 16px/30px 'pretendard';
+    color:#ffffff;
+}
+.YLive_bottomBox{
+    width:100%;
+    height:100px;
+    box-sizing:border-box;
+    padding:20px;
+    padding-bottom:0px;
+    font:bold 16px/22px 'pretendard';
+}
+.YLive_bottomBox span{
+    font:normal 14px/30px 'pretendard';
+    color:#555555;
+}

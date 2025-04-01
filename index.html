@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mainVis.css">
     <link rel="stylesheet" href="./css/cardMore.css">
-    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/pangdeal.css">
+    <link rel="stylesheet" href="./css/live.css">
 </head>
 
 <body>
@@ -954,9 +955,9 @@
         </div>
     </div>
 
-    <!------헤더끝------>
+    <!--헤더끝-->
 
-    <!----메인카드섹션---->
+    <!--메인카드섹션-->
     <div id="visualWrap">
         <div id="main_promotionCardBox">
             <ul id="main_promotionCard_list">
@@ -1076,23 +1077,27 @@
             </div>
         </div>
     </div>
-    <!----메인카드섹션끝---->
+    <!--메인카드섹션끝-->
 
-    <!----컨텐츠영역---->
+    <!--컨텐츠영역-->
     <div id="contentWrap">
         <section class="contentsBox" id="yellowPangDeal">
             <h2 class="title">망설이면 솔드아웃! <b>옐로팡딜</b></h2>
             <div class="viewAll_link">
                 <a href="#">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
             </div>
-            <a id="YP_imgLinkBox">
+            <a href="#" id="YP_imgLinkBox">
                 <img src="./images/link00.png" alt="20만원대부터 시작하는 봄맞이 특가">
             </a>
             <div id="yellowPangDeal_package">
+                <div class="btnBox">
+                    <button id="YP_prev_btn" class="slideBtn prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="YP_next_btn" class="slideBtn nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
                 <div class="yellowPangDeal_innerBox">
                     <a href="#">
                         <div class="YP_innerImg">
-                            <img src="./images/pack00.webp" alt="코타키나발루 5박6일">
+                            <img src="./images/kota.webp" alt="코타키나발루 5박6일">
                             <div class="YP_timeout">
                                 <i class="fa-regular fa-clock"></i>
                                 <span>03.25</span>
@@ -1114,17 +1119,114 @@
                                 <p><span class="primePrice">379,000원~</span><span class="DCPrice">359,000</span>원~</p>
                                 <button>예약하기</button>
                             </div>
-                        </div>                            
+                        </div>
                     </a>
                 </div>
             </div>
-            <div id="YP_btnBox">
-                <button id="YP_prev_btn" class="prevBtn"></button>
-                <button id="YP_next_btn" class="nextBtn"></button>
+        </section>
+        <section class="contentsBox" id="yellowLive">
+            <h2 class="title">생생한 여행! <b>옐로LIVE</b></h2>
+            <div class="viewAll_link">
+                <a href="#">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div id="yellowLive_listBox">
+                <ul id="yellowLive_list">
+                    <li>
+                        <a href="#">
+                            <div class="YLive_topBox">
+                                <img src="./images/fukuoka.png" alt="괌 4/5/6일">
+                                <div class="brodcastAnnoun">
+                                    <p>방송예정</p>
+                                    <p>04월 02일(수)</p>
+                                    <p>19:00</p>
+                                    <button class="signUpAlarm">알림신청</button>
+                                </div>                                
+                            </div>
+                            <div class="YLive_bottomBox">
+                                <p>[공개예정]<br>
+                                괌 4/5/6일</p>
+                                <span>믿기 힘든 역대급 특가 도전!</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="YLive_topBox">
+                                <img src="./images/boracay.png" alt="싱가포르 5일">
+                                <div class="brodcastAnnoun">
+                                    <p>방송예정</p>
+                                    <p>04월 17일(목)</p>
+                                    <p>19:00</p>
+                                    <button class="signUpAlarm">알림신청</button>
+                                </div>                                
+                            </div>
+                            <div class="YLive_bottomBox">
+                                <p>[공개예정]<br>
+                                싱가포르 5일</p>
+                                <span>4/17 채널 고정!</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="YLive_topBox">
+                                <img src="./images/cardsection07.webp" alt="칭다오 4일">
+                                <div class="brodcastTerm">
+                                    <span class="likeVal"><i class="fa-solid fa-heart"></i>&nbsp; <span>3.2k</span></span>
+                                    <span class="viewVal"><i class="fa-solid fa-eye"></i> <span>7.8k</span></span>
+                                    <div class="brodcastTime"><i class="fa-regular fa-circle-play"></i> 01:00:00</div>
+                                </div>
+                            </div>
+                            <div class="YLive_bottomBox">
+                                <p>[패키지]<br>
+                                칭다오 4일</p>
+                                <span>뻔하지 않아서 FUN하다!<span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="YLive_topBox">
+                                <img src="./images/cardsection06.webp" alt="아시아크루즈 6일">
+                                <div class="brodcastTerm">
+                                    <span class="likeVal"><i class="fa-solid fa-heart"></i>&nbsp; <span>1.6k</span></span>
+                                    <span class="viewVal"><i class="fa-solid fa-eye"></i> <span>8.7k</span></span>
+                                    <div class="brodcastTime"><i class="fa-regular fa-circle-play"></i> 01:00:29</div>
+                                </div>
+                            </div>
+                            <div class="YLive_bottomBox">
+                                <p>[테마여행]<br>
+                                아시아크루즈 6일</p>
+                                <span>발 디디는 순간, 여행이 된다!<span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="YLive_topBox">
+                                <img src="./images/kota.webp" alt="코타키나발루 5/6일">
+                                <div class="brodcastTerm">
+                                    <span class="likeVal"><i class="fa-solid fa-heart"></i>&nbsp; <span>1.3k</span></span>
+                                    <span class="viewVal"><i class="fa-solid fa-eye"></i> <span>21k</span></span>
+                                    <div class="brodcastTime"><i class="fa-regular fa-circle-play"></i> 01:01:13</div>
+                                </div>
+                            </div>
+                            <div class="YLive_bottomBox">
+                                <p>[관광+자유]<br>
+                                코타키나발루 5/6일</p>
+                                <span>고르는대로 여행이 된다!<span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
+        <section class="contentsBox" id="recommendProduct">
+            <h2 class="title"><b>추천상품</b></h2>
+
+        </section>
     </div>
-    <!----컨텐츠영역끝---->
+    <!--컨텐츠영역끝-->
 
 
     <ul class="skipMenu">
@@ -1133,7 +1235,7 @@
 
     <script src="./script/script.js"></script>
     <script src="./script/mainCard.js"></script>
-    <script src="./script/times.js"></script>
+    <script src="./script/pang.js"></script>
 </body>
 
 </html>
