@@ -81,13 +81,6 @@ function cardSectionSlide(){
         if(itSlide==false){
             itSlide=true;
 
-
-            cardIndex=currentCard+4
-            if(cardIndex>=maxIndex){
-                cardIndex-=maxIndex
-            }
-            cardCall()
-
             currentIndex++;
             if(currentIndex>maxIndex){
                 currentIndex=1
@@ -104,9 +97,7 @@ function cardSectionSlide(){
     function nextSlide(){
         currentX=slide.offsetLeft;
         gsap.to(slide,{left:currentX-moveX,onComplete:()=>{
-            // slide.append(slide.firstElementChild)
-            slide.removeChild(slide.firstElementChild);
-            slide.append(newCard);
+            slide.append(slide.firstElementChild)
             gsap.set(slide,{left:'50%'});
             itSlide=false
             currentCard=currentIndex-1
@@ -119,14 +110,6 @@ function cardSectionSlide(){
         if(itSlide==false){
             itSlide=true;
 
-            cardIndex=currentCard-4
-            if(cardIndex<0){
-                cardIndex+=maxIndex
-            }
-
-            console.log(cardIndex)
-
-            cardCall()
                         
 
             currentIndex--;
@@ -142,8 +125,7 @@ function cardSectionSlide(){
     function prevSlide(){
         currentX=slide.offsetLeft;
         gsap.to(slide,{left:currentX+moveX,onComplete:()=>{
-            slide.removeChild(slide.lastElementChild);
-            slide.prepend(newCard);
+            slide.prepend(slide.lastElementChild);
             gsap.set(slide,{left:'50%'})
             itSlide=false
             currentCard=currentIndex-1
@@ -151,17 +133,6 @@ function cardSectionSlide(){
     }
 
 
-
-    function cardCall(){
-
-        newCard=document.createElement('li');
-
-
-        axios.get(`./mainCard/card0${cardIndex}.html`).then((res)=>{
-            newCard.innerHTML=res.data
-        })
-
-    }
 
     function slideBar(){
         gsap.to(bar,{width:`${barWidth*currentIndex}px`})
